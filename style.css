@@ -1,0 +1,6 @@
+.imagen 1 {
+    width: 300px; /* Cambia el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    border: 2px solid #000; /* Añade un borde */
+    border-radius: 10px; /* Bordes redondeados */
+}
