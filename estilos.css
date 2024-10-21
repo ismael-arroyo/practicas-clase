@@ -12,6 +12,10 @@
     font-family: "RobotoBold";
     src: url(font/Roboto-Bold.ttf);
 }
+@font-face {
+    font-family: "RobotoItalic";
+    src: url(font/Roboto-Italic.ttf);
+}
 h1 {
 font-family: "RobotoBold";
 }
@@ -20,4 +24,10 @@ p {
     }
 span {
     font-family: "Roboto";
+    }
+a {
+    font-family: "RobotoItalic";
+    }
+li {
+    font-family: "RobotoBold";
     }
