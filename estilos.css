@@ -4,3 +4,14 @@
     border-radius: 40px;
    
 }
+@font-face {
+    font-family: "Roboto";
+    src: url(font/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "RobotoBold";
+    src: url(font/Roboto-Bold.ttf);
+}
+h1 {
+font-family: "RobotoBold";
+}
