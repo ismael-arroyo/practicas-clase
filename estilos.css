@@ -40,9 +40,9 @@ li {
     }
 
 body {
-        margin-left: 10%; /* Márgenes del 10% a la izquierda */
-        margin-right: 10%; /* Márgenes del 10% a la derecha */
-        max-width: 1200px; /* Establecer un ancho máximo para el contenido */
-        margin: 0 auto; /* Centra el contenido */
-        padding: 20px; /* Espacio interior opcional */
+        margin-left: 5%; 
+        margin-right: 10%; 
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 20px; 
     }
