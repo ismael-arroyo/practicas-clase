@@ -1,4 +1,13 @@
-.contenedor {
+.contenedor1 {
+    text-align: center;
+}
+.contenedor2 {
+    text-align: center;
+}
+.contenedor3 {
+    text-align: center;
+}
+.contenedor4 {
     text-align: center;
 }
 .imagenes {
@@ -46,3 +55,14 @@ body {
         margin: 0 auto; 
         padding: 20px; 
     }
+    
+li {
+    list-style: disc; /* Esto asegurará que haya un puntito antes del texto */
+    margin-left: 20px; /* Ajusta el margen según sea necesario */
+}
+
+h2 {
+    display: inline; /* Esto permite que el h2 se muestre en línea con el resto del texto */
+    margin: 0; /* Elimina el margen por defecto */
+    padding-right: 10px; /* Espacio entre el h2 y el enlace */
+}   
