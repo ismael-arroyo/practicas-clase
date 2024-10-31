@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "types.css"; 
+
+
+@font-face {
+    font-family: 'theneue'; 
+    src: url('assets/font/TheNeue-Black.woff2') format('woff2'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+    font-family: 'theneue'; 
+}
+
+h2 {
+    font-family: 'theneue'; 
+}
+
+h3 {
+    font-family: 'theneue'; 
+}
+
+p {
+    font-family: 'theneue'; 
+}
+
