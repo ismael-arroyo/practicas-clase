@@ -66,3 +66,8 @@ h2 {
     margin: 0; /* Elimina el margen por defecto */
     padding-right: 10px; /* Espacio entre el h2 y el enlace */
 }   
+
+.imagenes {
+    max-width: 100%;
+    height: auto;
+}
