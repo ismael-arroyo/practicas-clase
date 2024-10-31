@@ -69,5 +69,7 @@ h2 {
 
 .imagenes {
     max-width: 100%;
-    height: auto;
+    width: 100%; 
+    height: auto; 
+    display: block;
 }
