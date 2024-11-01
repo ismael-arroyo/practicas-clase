@@ -20,33 +20,7 @@
     margin-right: 10px; 
    
 }
-@font-face {
-    font-family: "Roboto";
-    src: url(assets/font/Roboto-Regular.ttf);
-}
-@font-face {
-    font-family: "RobotoBold";
-    src: url(assets/font/Roboto-Bold.ttf);
-}
-@font-face {
-    font-family: "RobotoItalic";
-    src: url(assets/font/Roboto-Italic.ttf);
-}
-h1 {
-font-family: "RobotoBold";
-}
-p {
-    font-family: "Roboto";
-    }
-span {
-    font-family: "Roboto";
-    }
-a {
-    font-family: "RobotoItalic";
-    }
-li {
-    font-family: "RobotoBold";
-    }
+
 
 body {
         margin-left: 10%; 
@@ -57,14 +31,14 @@ body {
     }
     
 li {
-    list-style: disc; /* Esto asegurará que haya un puntito antes del texto */
-    margin-left: 20px; /* Ajusta el margen según sea necesario */
+    list-style: disc; 
+    margin-left: 20px; 
 }
 
 h2 {
-    display: inline; /* Esto permite que el h2 se muestre en línea con el resto del texto */
-    margin: 0; /* Elimina el margen por defecto */
-    padding-right: 10px; /* Espacio entre el h2 y el enlace */
+    display: inline; 
+    margin: 0; 
+    padding-right: 10px; 
 }   
 
 .imagenes {
