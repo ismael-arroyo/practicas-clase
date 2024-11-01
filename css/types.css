@@ -1,14 +1,14 @@
 @font-face {
     font-family: "Roboto";
-    src: url(assets/font/Roboto-Regular.ttf);
+    src: url(../assets/font/Roboto-Regular.ttf);
 }
 @font-face {
     font-family: "RobotoBold";
-    src: url(assets/font/Roboto-Bold.ttf);
+    src: url(../assets/font/Roboto-Bold.ttf);
 }
 @font-face {
     font-family: "RobotoItalic";
-    src: url(assets/font/Roboto-Italic.ttf);
+    src: url(../assets/font/Roboto-Italic.ttf);
 }
 h1 {
 font-family: "RobotoBold";
