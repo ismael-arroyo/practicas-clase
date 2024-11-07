@@ -16,6 +16,16 @@ line-height: 200px
     text-align: center;
 }
 
+
+.tarjeta {
+    background-color: #5650a7;     
+    border-radius: 8px;           
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;                
+    max-width: 300px;             
+    margin: 20px auto;
+  }
+
 body {
     background-color: #a7e3ff;  
   }
