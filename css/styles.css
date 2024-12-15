@@ -1,0 +1,37 @@
+/* Estilo del header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #e0ebe7; /* Color de fondo */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #537d73;
+  text-transform: lowercase;
+  font-family: "Arial", sans-serif;
+}
+
+.icons {
+  display: flex;
+  gap: 0.5rem; /* Espacio entre los iconos */
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button .material-icons {
+  font-size: 1.5rem; /* Ajusta el tamaño del icono */
+  color: #537d73;
+}
