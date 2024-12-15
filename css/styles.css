@@ -1,43 +1,88 @@
-/* Estilo del header */
+/* Estilo general del header */
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  background-color: #004d43; /* Color de fondo */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  align-items: center; /* Alinear verticalmente */
+  justify-content: space-between; /* Distribuir elementos */
+  padding: 10px 20px; /* Márgenes laterales iguales */
+  background-color: #ffffff;
 }
 
-.logo span {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ebfff6;
-  text-transform: lowercase;
-  font-family: "Arial", sans-serif;
-}
-
-.icons {
-  display: flex;
-  gap: 0.5rem; /* Espacio entre los iconos */
-}
-
-.icon-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
+/* Contenedor del logo */
+.logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #e0e0e0;
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 10px;
+}
+
+.logo-svg {
+  width: 80px; /* Tamaño del logo */
+  height: auto;
+}
+
+/* Íconos de búsqueda y menú */
+.icon-button {
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
 
 .icon-button .material-icons {
-  font-size: 1.5rem; /* Ajusta el tamaño del icono */
-  color: #ebfff6;
+  font-size: 30px;
+  color: #333;
 }
 
-/* Estilo del logo SVG */
-.logo-svg {
-  width: 120px; /* Ajusta el tamaño del logo según lo que necesites */
-  height: auto;
+/* Ícono de búsqueda */
+.search-icon {
+  display: flex;
+  margin-left: auto; /* Empujar hacia la derecha */
+  gap: 10px; /* Espacio entre el ícono de búsqueda y el ícono de menú */
+}
+
+/* Ícono de menú */
+.menu-icon {
+  display: flex;
+  margin-left: 10px; /* Espacio entre el ícono de búsqueda y el ícono de menú */
+  margin-right: 20px; /* Igualar el margen derecho al padding del header */
+}
+
+/* Menú de navegación (solo visible en desktop) */
+.nav-buttons {
+  display: none; /* Ocultar en móvil */
+  gap: 10px; /* Espacio entre botones */
+}
+
+/* Botones del menú */
+.nav-button {
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 8px 15px; /* Espaciado interno */
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Media Query para Desktop */
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none; /* Ocultar ícono de menú en desktop */
+  }
+
+  .nav-buttons {
+    display: flex; /* Mostrar botones en desktop */
+  }
+
+  .search-icon {
+    margin-left: auto; /* Empujar el ícono de búsqueda a la derecha */
+    margin-right: 10px; /* Espaciado para consistencia */
+  }
 }
