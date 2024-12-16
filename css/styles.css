@@ -3,7 +3,7 @@
   display: flex;
   align-items: center; /* Alinear verticalmente */
   justify-content: space-between; /* Distribuir elementos */
-  padding: 10px 20px; /* Márgenes laterales iguales */
+  padding: 10px 20px; /* Márgenes izquierdo y derecho iguales */
   background-color: #ffffff;
 }
 
@@ -26,16 +26,15 @@
 @media (max-width: 767px) {
   .logo-svg {
     width: 130px; /* Aumenta el tamaño del logo para que tenga la misma altura que los íconos */
-    height: auto; /* Forzar altura igual a la de los iconos */
+    height: auto;
   }
 
-  .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #004d43;
-    border-radius: 15px; /* Bordes redondeados */
-    padding: 10px;
+  .menu-icon {
+    margin-right: 10px; /* Ajustar el margen derecho al padding del header */
+  }
+
+  .search-icon {
+    margin-left: 10px; /* Igualar el margen izquierdo al derecho */
   }
 }
 
@@ -68,7 +67,7 @@
 .menu-icon {
   display: flex;
   margin-left: 10px; /* Espacio entre el ícono de búsqueda y el ícono de menú */
-  margin-right: 20px; /* Igualar el margen derecho al padding del header */
+  margin-right: 10px; /* Ajustar margen derecho al padding del header */
 }
 
 /* Menú de navegación (solo visible en desktop) */
