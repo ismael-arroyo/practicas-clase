@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e0e0e0;
+  background-color: #004d43;
   border-radius: 15px; /* Bordes redondeados */
   padding: 10px;
 }
@@ -22,9 +22,26 @@
   height: auto;
 }
 
+/* Media Query para formato móvil */
+@media (max-width: 767px) {
+  .logo-svg {
+    width: 130px; /* Aumenta el tamaño del logo para que tenga la misma altura que los íconos */
+    height: auto; /* Forzar altura igual a la de los iconos */
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #004d43;
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px;
+  }
+}
+
 /* Íconos de búsqueda y menú */
 .icon-button {
-  background-color: #e0e0e0;
+  background-color: #004d43;
   border: none;
   border-radius: 15px; /* Bordes redondeados */
   display: flex;
@@ -37,7 +54,7 @@
 
 .icon-button .material-icons {
   font-size: 30px;
-  color: #333;
+  color: #ebfff6;
 }
 
 /* Ícono de búsqueda */
@@ -62,12 +79,12 @@
 
 /* Botones del menú */
 .nav-button {
-  background-color: #e0e0e0;
+  background-color: #004d43;
   border: none;
   border-radius: 15px; /* Bordes redondeados */
   padding: 8px 15px; /* Espaciado interno */
   font-size: 16px;
-  color: #333;
+  color: #ebfff6;
   cursor: pointer;
 }
 
@@ -84,5 +101,16 @@
   .search-icon {
     margin-left: auto; /* Empujar el ícono de búsqueda a la derecha */
     margin-right: 10px; /* Espaciado para consistencia */
+  }
+
+  /* Ajustar el tamaño del ícono de búsqueda */
+  .search-icon .icon-button .material-icons {
+    font-size: 20px; /* Tamaño del ícono de búsqueda */
+  }
+
+  /* Ajustar el tamaño del contenedor del ícono */
+  .search-icon .icon-button {
+    width: 40px; /* Ancho reducido */
+    height: 35px; /* Altura reducida */
   }
 }
