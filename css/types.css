@@ -1,27 +1,41 @@
 @font-face {
-    font-family: "Roboto";
-    src: url(../assets/font/Roboto-Regular.ttf);
+  font-family: "Roboto";
+  src: url(../assets/font/Roboto-Regular.ttf);
 }
 @font-face {
-    font-family: "RobotoBold";
-    src: url(../assets/font/Roboto-Bold.ttf);
+  font-family: "RobotoBold";
+  src: url(../assets/font/Roboto-Bold.ttf);
 }
 @font-face {
-    font-family: "RobotoItalic";
-    src: url(../assets/font/Roboto-Italic.ttf);
+  font-family: "RobotoItalic";
+  src: url(../assets/font/Roboto-Italic.ttf);
 }
 h1 {
-font-family: "RobotoBold";
+  font-family: "RobotoBold";
 }
 p {
-    font-family: "Roboto";
-    }
+  font-family: "Roboto";
+}
 span {
-    font-family: "Roboto";
-    }
+  font-family: "Roboto";
+}
 a {
-    font-family: "RobotoItalic";
-    }
+  font-family: "RobotoItalic";
+}
 li {
-    font-family: "RobotoBold";
-    }
+  font-family: "RobotoBold";
+}
+
+@font-face {
+  font-family: "Triplett CG Light";
+  src: url(../assets/font/Triplett\ CG\ Light\ Regular.otf);
+}
+
+.titulo-principal {
+  font-family: "Triplett CG Light";
+  font-size: 3rem; /* Tamaño de la fuente */
+  text-align: left; /* Centra el texto */
+  margin-top: 80px; /* Espaciado superior */
+  margin-left: 20px;
+  color: #43172e; /* Color del texto */
+}
