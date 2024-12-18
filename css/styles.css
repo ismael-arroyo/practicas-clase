@@ -113,3 +113,8 @@
     height: 35px; /* Altura reducida */
   }
 }
+
+.chars {
+  transform: translateY(110px);
+  transition: transform 0.5s;
+}

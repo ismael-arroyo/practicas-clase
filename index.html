@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Encabezado Responsive</title>
+    <title>Nexus</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -44,10 +44,34 @@
         <button class="nav-button">Contacto</button>
       </nav>
     </header>
-  </body>
 
-  <h1 class="titulo-principal">
-    Descubre nuestra historia<br />
-    Un puente entre lo tradicional y lo moderno
-  </h1>
+    <h1 id="titulo-principal" class="titulo">
+      Descubre nuestra historia<br />
+      Un puente entre lo tradicional y lo moderno
+    </h1>
+
+    <script src="https://unpkg.com/split-type"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      // Espera a que el DOM se cargue antes de ejecutar el código
+      window.onload = function () {
+        // Dividir el texto en caracteres utilizando SplitType
+        const titulo = new SplitType("#titulo-principal", { types: "chars" });
+
+        // Animación GSAP para cada letra
+        gsap.from(titulo.chars, {
+          opacity: 0, // Aparece desde invisible
+          y: 50, // Sube desde abajo
+          stagger: 0.05, // Efecto escalonado
+          duration: 0.5, // Duración de la animación
+          ease: "power4.out", // Efecto de suavizado
+        });
+      };
+    </script>
+  </body>
 </html>

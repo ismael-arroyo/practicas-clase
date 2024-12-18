@@ -31,11 +31,14 @@ li {
   src: url(../assets/font/Triplett\ CG\ Light\ Regular.otf);
 }
 
-.titulo-principal {
+/* Estilo general para el título */
+.titulo {
   font-family: "Triplett CG Light";
-  font-size: 3rem; /* Tamaño de la fuente */
-  text-align: left; /* Centra el texto */
-  margin-top: 80px; /* Espaciado superior */
+  font-size: 3rem;
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 80px;
   margin-left: 20px;
-  color: #43172e; /* Color del texto */
+  color: #43172e;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
