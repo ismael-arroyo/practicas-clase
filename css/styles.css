@@ -118,3 +118,11 @@
   transform: translateY(110px);
   transition: transform 0.5s;
 }
+
+.imagen-portada {
+  border-radius: 30px; /* Bordes redondeados */
+  width: 100%; /* La imagen ocupa el 80% del ancho disponible */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Hace que la imagen sea un bloque */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
