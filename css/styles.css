@@ -159,18 +159,19 @@ body {
 }
 
 .contenedor-imagen {
-  max-width: 1200px; /* Ancho máximo del contenido */
-  margin: 0 auto; /* Centrar contenido horizontalmente */
-  padding: 0 20px; /* Agregar márgenes laterales */
+  max-width: calc(100% - 40px); /* 20px en cada lado */
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .imagen-portada {
+  max-width: 100%; /* Para ocupar todo el ancho disponible del contenedor */
   border-radius: 30px;
-  max-width: calc(100% - 40px); /* Considera los márgenes */
   margin-left: 20px;
   margin-right: 20px;
   height: auto;
   display: block;
+  margin: 0 auto; /* Centra horizontalmente */
 }
 
 .highlight {
