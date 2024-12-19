@@ -45,6 +45,14 @@ li {
   line-height: 1.5;
   margin-top: 20px;
   margin-left: 20px;
+  margin-right: 20px;
   color: #43172e;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* Media Query para ajustar el tamaño del título en dispositivos móviles */
+@media (max-width: 767px) {
+  .titulo {
+    font-size: 2rem; /* Reducción del tamaño del texto */
+  }
 }

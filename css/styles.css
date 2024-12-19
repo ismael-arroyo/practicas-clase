@@ -40,7 +40,8 @@
 
 /* Íconos de búsqueda y menú */
 .icon-button {
-  background-color: #004d43;
+  background-color: #004d43; /* Fondo inicial */
+  color: #ebfff6; /* Texto inicial */
   border: none;
   border-radius: 15px; /* Bordes redondeados */
   display: flex;
@@ -49,11 +50,23 @@
   width: 50px;
   height: 50px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Suaviza la transición */
 }
 
 .icon-button .material-icons {
   font-size: 30px;
-  color: #ebfff6;
+  color: #ebfff6; /* Aseguramos el color inicial */
+  transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+/* Efecto hover: invierte colores */
+.icon-button:hover {
+  background-color: #ebfff6; /* Fondo al pasar el cursor */
+  color: #004d43; /* Color del ícono al pasar el cursor */
+}
+
+.icon-button:hover .material-icons {
+  color: #004d43; /* Color del ícono al pasar el cursor */
 }
 
 /* Ícono de búsqueda */
@@ -78,13 +91,21 @@
 
 /* Botones del menú */
 .nav-button {
-  background-color: #004d43;
-  border: none;
-  border-radius: 15px; /* Bordes redondeados */
-  padding: 8px 15px; /* Espaciado interno */
+  background-color: #004d43; /* Fondo inicial */
+  color: #ebfff6; /* Texto inicial */
+  font-family: "PoppinsRegular";
   font-size: 16px;
-  color: #ebfff6;
+  border: none;
+  border-radius: 15px;
+  padding: 8px 15px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Suaviza la transición */
+}
+
+/* Efecto hover: invierte colores */
+.nav-button:hover {
+  background-color: #ebfff6; /* Fondo al pasar el cursor */
+  color: #004d43; /* Texto al pasar el cursor */
 }
 
 /* Media Query para Desktop */
@@ -131,12 +152,25 @@
   transition: transform 0.5s;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor-imagen {
+  max-width: 1200px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrar contenido horizontalmente */
+  padding: 0 20px; /* Agregar márgenes laterales */
+}
+
 .imagen-portada {
-  border-radius: 30px; /* Bordes redondeados */
-  width: 100%; /* La imagen ocupa el 80% del ancho disponible */
-  height: auto; /* Mantiene la proporción de la imagen */
-  display: block; /* Hace que la imagen sea un bloque */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
+  border-radius: 30px;
+  max-width: calc(100% - 40px); /* Considera los márgenes */
+  margin-left: 20px;
+  margin-right: 20px;
+  height: auto;
+  display: block;
 }
 
 .highlight {
