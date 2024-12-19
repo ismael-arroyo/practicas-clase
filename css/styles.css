@@ -142,7 +142,7 @@
   left: -3%; /* Mueve a la izquierda un 5% para centrar el ancho extra */
   border-radius: 30px; /* Bordes redondeados */
   width: 107%; /* Abarca un poco más del texto */
-  height: 100%; /* Abarca toda la altura del texto */
+  height: 90%; /* Abarca toda la altura del texto */
   background-color: #d2ffa0; /* Color del rectángulo */
   transform: scaleX(0); /* Inicia invisible */
   transform-origin: left; /* Expande desde la izquierda */
