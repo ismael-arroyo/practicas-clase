@@ -139,9 +139,9 @@
   content: ""; /* Crea el rectángulo */
   position: absolute;
   bottom: 0; /* Alinea con la parte inferior del texto */
-  left: -2.5%; /* Mueve a la izquierda un 5% para centrar el ancho extra */
+  left: -3%; /* Mueve a la izquierda un 5% para centrar el ancho extra */
   border-radius: 30px; /* Bordes redondeados */
-  width: 105%; /* Abarca un poco más del texto */
+  width: 107%; /* Abarca un poco más del texto */
   height: 100%; /* Abarca toda la altura del texto */
   background-color: #d2ffa0; /* Color del rectángulo */
   transform: scaleX(0); /* Inicia invisible */
