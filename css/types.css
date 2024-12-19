@@ -31,9 +31,15 @@ li {
   src: url(../assets/font/Triplett\ CG\ Light\ Regular.otf);
 }
 
+@font-face {
+  font-family: "PoppinsRegular";
+  src: url(../assets/font/Poppins-Regular.ttf);
+}
+
 /* Estilo general para el título */
 .titulo {
-  font-family: "Triplett CG Light";
+  font-family: "PoppinsRegular";
+  font-weight: 400;
   font-size: 3rem;
   text-align: left;
   line-height: 1.5;

@@ -104,13 +104,25 @@
 
   /* Ajustar el tamaño del ícono de búsqueda */
   .search-icon .icon-button .material-icons {
-    font-size: 20px; /* Tamaño del ícono de búsqueda */
+    font-size: 30px; /* Tamaño del ícono de búsqueda */
   }
 
   /* Ajustar el tamaño del contenedor del ícono */
   .search-icon .icon-button {
-    width: 40px; /* Ancho reducido */
-    height: 35px; /* Altura reducida */
+    width: 45px; /* Ancho reducido */
+    height: 40px; /* Altura reducida */
+  }
+
+  /* Cambiar la tipografía de los botones en desktop */
+  .nav-button {
+    font-family: "PoppinsRegular"; /* Cambia a la tipografía deseada */
+    font-size: 16px; /* Ajusta el tamaño si es necesario */
+    background-color: #004d43;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 15px;
+    color: #ebfff6;
+    cursor: pointer;
   }
 }
 
