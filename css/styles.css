@@ -81,6 +81,7 @@
   display: flex;
   margin-left: 10px; /* Espacio entre el ícono de búsqueda y el ícono de menú */
   margin-right: 10px; /* Ajustar margen derecho al padding del header */
+  cursor: pointer;
 }
 
 /* Menú de navegación (solo visible en desktop) */
@@ -200,4 +201,20 @@ body {
 /* Para aplicar correctamente la animación al rectángulo */
 .highlight.active::before {
   transform: scaleX(1); /* Expande el rectángulo */
+}
+
+.menu-icon.active + .mobile-menu {
+  display: flex; /* Mostrar el menú cuando el icono está activo */
+}
+
+.mobile-menu {
+  display: none; /* Ocultar por defecto */
+  flex-direction: column;
+  background-color: #004d43;
+  border-radius: 15px;
+  padding: 15px;
+  position: absolute; /* Cambiar a absolute */
+  top: 100%; /* Alineado justo debajo del ícono */
+  left: 0; /* Alineado a la izquierda del menú */
+  width: 100%; /* Anchura completa del contenedor */
 }
