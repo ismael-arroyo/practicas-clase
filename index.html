@@ -47,7 +47,8 @@
 
     <h1 id="titulo-principal" class="titulo">
       Descubre nuestra historia<br />
-      Un puente entre lo tradicional y lo moderno
+      Un puente entre lo <span class="highlight">tradicional</span> y lo
+      <span class="highlight">moderno</span>
     </h1>
 
     <script src="https://unpkg.com/split-type"></script>
@@ -58,18 +59,29 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      // Espera a que el DOM se cargue antes de ejecutar el código
       window.onload = function () {
-        // Dividir el texto en caracteres utilizando SplitType
+        // Dividir el texto en caracteres
         const titulo = new SplitType("#titulo-principal", { types: "chars" });
 
-        // Animación GSAP para cada letra
+        // Animación de las letras
         gsap.from(titulo.chars, {
-          opacity: 0, // Aparece desde invisible
-          y: 50, // Sube desde abajo
-          stagger: 0.05, // Efecto escalonado
-          duration: 0.5, // Duración de la animación
-          ease: "power4.out", // Efecto de suavizado
+          opacity: 0,
+          y: 50,
+          stagger: 0.05,
+          duration: 0.5,
+          ease: "power4.out",
+          onComplete: () => {
+            // Animación secuencial de las palabras resaltadas
+            const highlights = document.querySelectorAll(".highlight");
+            highlights.forEach((highlight, index) => {
+              gsap.to(highlight, {
+                onStart: () => {
+                  highlight.classList.add("active"); // Activa la animación del rectángulo
+                },
+                delay: index * 0.5, // Retraso entre cada animación
+              });
+            });
+          },
         });
       };
     </script>

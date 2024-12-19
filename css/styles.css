@@ -126,3 +126,31 @@
   display: block; /* Hace que la imagen sea un bloque */
   margin: 0 auto; /* Centra la imagen horizontalmente */
 }
+
+.highlight {
+  font-family: "Triplett CG Light"; /* Tipografía aplicada */
+  position: relative; /* Necesario para que el ::after sea relativo al texto */
+  display: inline-block; /* Ajusta el tamaño al contenido del texto */
+  z-index: 1;
+}
+
+/* Rectángulo animado */
+.highlight::before {
+  content: ""; /* Crea el rectángulo */
+  position: absolute;
+  bottom: 0; /* Alinea con la parte inferior del texto */
+  left: -2.5%; /* Mueve a la izquierda un 5% para centrar el ancho extra */
+  border-radius: 30px; /* Bordes redondeados */
+  width: 105%; /* Abarca un poco más del texto */
+  height: 100%; /* Abarca toda la altura del texto */
+  background-color: #d2ffa0; /* Color del rectángulo */
+  transform: scaleX(0); /* Inicia invisible */
+  transform-origin: left; /* Expande desde la izquierda */
+  z-index: -1; /* Envía el rectángulo detrás del texto */
+  transition: transform 0.5s ease; /* Suaviza la animación */
+}
+
+/* Para aplicar correctamente la animación al rectángulo */
+.highlight.active::before {
+  transform: scaleX(1); /* Expande el rectángulo */
+}
