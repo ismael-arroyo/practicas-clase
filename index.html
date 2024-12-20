@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/types.css" />
+    <link rel="stylesheet" href="./css/media-queries.css" />
 
     <!--Javascript-->
     <script src="https://unpkg.com/split-type"></script>
@@ -29,41 +30,28 @@
   </head>
   <body>
     <header class="header">
-      <!-- Logo -->
-      <div class="logo-container">
-        <img
-          src="assets/images/logonexus.svg"
-          alt="Logo Nexus"
-          class="logo-svg"
-        />
-      </div>
-
-      <!-- Ícono de búsqueda (siempre visible) -->
-      <div class="search-icon">
-        <button class="icon-button">
-          <span class="material-icons">search</span>
-        </button>
-      </div>
-
-      <!-- Ícono de menú (solo visible en móvil) -->
-      <div class="menu-icon">
-        <button class="icon-button">
+      <nav class="navbar">
+        <div class="logo-container">
+          <img
+            src="assets/images/logonexus.svg"
+            alt="Logo Nexus"
+            class="logo-svg"
+          />
+        </div>
+        <div class="search-icon">
+          <button class="icon-button">
+            <span class="material-icons">search</span>
+          </button>
+        </div>
+        <button class="icon-button menu-icon">
           <span class="material-icons">menu</span>
         </button>
-        <div class="mobile-menu">
-          <a href="#">About</a>
-          <a href="#">Servicios</a>
-          <a href="#">Tarifas</a>
-          <a href="#">Contacto</a>
-        </div>
-      </div>
-
-      <!-- Botones del menú (visibles en desktop) -->
-      <nav class="nav-buttons">
-        <button class="nav-button">About</button>
-        <button class="nav-button">Servicios</button>
-        <button class="nav-button">Tarifas</button>
-        <button class="nav-button">Contacto</button>
+        <ul class="nav-buttons">
+          <button class="nav-button">About</button>
+          <button class="nav-button">Servicios</button>
+          <button class="nav-button">Tarifas</button>
+          <button class="nav-button">Contacto</button>
+        </ul>
       </nav>
     </header>
 

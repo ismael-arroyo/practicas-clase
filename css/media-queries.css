@@ -1,0 +1,63 @@
+/* Mobile Portrait */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+}
+/* EndOf MobilePortrait */
+
+/* Mobile Landscape */
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+}
+
+/* Media Query para formato móvil */
+@media (max-width: 767px) {
+  .navbar {
+    display: flex; /* Asegura que los elementos estén en línea */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Espaciado entre logo, menú y búsqueda */
+    width: 100%;
+  }
+
+  .menu-icon {
+    margin: 5px; /* Elimina márgenes extra */
+  }
+
+  .search-icon {
+    margin: 5px; /* Elimina márgenes extra */
+    margin-left: auto; /* Empuja el ícono de búsqueda hacia la derecha */
+  }
+
+  .logo-svg {
+    width: 130px; /* Aumenta el tamaño del logo para que tenga la misma altura que los íconos */
+    height: auto;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+}
+
+/* Media Query para Desktop */
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none; /* Ocultar ícono de menú en desktop */
+  }
+
+  .nav-buttons {
+    display: flex; /* Mostrar botones en desktop */
+  }
+
+  .search-icon {
+    margin-left: auto; /* Empujar el ícono de búsqueda a la derecha */
+    margin-right: 10px; /* Espaciado para consistencia */
+  }
+
+  /* Ajustar el tamaño del ícono de búsqueda */
+  .search-icon .icon-button .material-icons {
+    font-size: 30px; /* Tamaño del ícono de búsqueda */
+  }
+
+  /* Ajustar el tamaño del contenedor del ícono */
+  .search-icon .icon-button {
+    width: 45px; /* Ancho reducido */
+    height: 40px; /* Altura reducida */
+  }
+}
