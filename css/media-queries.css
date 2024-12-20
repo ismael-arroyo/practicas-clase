@@ -33,6 +33,10 @@
   .nav-buttons {
     display: none;
   }
+
+  .desktop-nav-buttons {
+    display: none;
+  }
 }
 
 /* Media Query para Desktop */
@@ -59,5 +63,13 @@
   .search-icon .icon-button {
     width: 45px; /* Ancho reducido */
     height: 40px; /* Altura reducida */
+  }
+
+  .mobile-nav-buttons {
+    display: none;
+  }
+
+  .desktop-nav-buttons {
+    display: flex;
   }
 }

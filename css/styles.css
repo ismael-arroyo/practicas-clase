@@ -75,12 +75,6 @@
   cursor: pointer;
 }
 
-/* Menú de navegación (solo visible en desktop) */
-.nav-buttons {
-  display: none; /* Ocultar en móvil */
-  gap: 10px; /* Espacio entre botones */
-}
-
 .nav-buttons {
   display: flex; /* Asegura que los botones estén en una línea */
   gap: 10px; /* Añade espacio entre los botones */
@@ -108,6 +102,53 @@
 .nav-button:hover {
   background-color: #ebfff6; /* Fondo al pasar el cursor */
   color: #004d43; /* Texto al pasar el cursor */
+}
+
+/* Menú para móvil */
+.mobile-nav-buttons {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* Debajo del header */
+  right: 10px;
+  background-color: #004d43;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Mostrar menú cuando se activa el checkbox */
+#menu-toggle:checked ~ .mobile-nav-buttons {
+  display: flex;
+}
+
+/* Botones del menú móvil */
+.mobile-nav-buttons li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+.mobile-nav-buttons .nav-button {
+  background-color: transparent;
+  color: #ebfff6;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Menú para desktop */
+.desktop-nav-buttons {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.desktop-nav-buttons .nav-button {
+  background-color: #004d43;
+  color: #ebfff6;
+  padding: 8px 15px;
 }
 
 .chars {
