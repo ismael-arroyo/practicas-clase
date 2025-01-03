@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/font/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "RobotoBold";
+  src: url(../assets/font/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "RobotoItalic";
+  src: url(../assets/font/Roboto-Italic.ttf);
+}
+h1 {
+  font-family: "RobotoBold";
+}
+p {
+  font-family: "Roboto";
+}
+span {
+  font-family: "Roboto";
+}
+a {
+  font-family: "RobotoItalic";
+}
+li {
+  font-family: "RobotoBold";
+}

@@ -205,7 +205,7 @@ body {
   color: #333; /* Color del texto */
   text-align: right; /* Justificar el texto */
   padding: 0 20px; /* Añadir un poco de espacio interior para que no se toque con el borde */
-  width: 80%; /* Limita el ancho del contenedor del texto (ajusta a tu gusto) */
+  width: 60%; /* Limita el ancho del contenedor del texto (ajusta a tu gusto) */
   margin-right: 0; /* Mantener el margen derecho como estaba */
   margin-left: auto; /* Alinea el contenedor a la derecha */
 }

@@ -1,32 +1,4 @@
 @font-face {
-  font-family: "Roboto";
-  src: url(../assets/font/Roboto-Regular.ttf);
-}
-@font-face {
-  font-family: "RobotoBold";
-  src: url(../assets/font/Roboto-Bold.ttf);
-}
-@font-face {
-  font-family: "RobotoItalic";
-  src: url(../assets/font/Roboto-Italic.ttf);
-}
-h1 {
-  font-family: "RobotoBold";
-}
-p {
-  font-family: "Roboto";
-}
-span {
-  font-family: "Roboto";
-}
-a {
-  font-family: "RobotoItalic";
-}
-li {
-  font-family: "RobotoBold";
-}
-
-@font-face {
   font-family: "Triplett CG Light";
   src: url(../assets/font/Triplett\ CG\ Light\ Regular.otf);
 }
@@ -34,6 +6,22 @@ li {
 @font-face {
   font-family: "PoppinsRegular";
   src: url(../assets/font/Poppins-Regular.ttf);
+}
+
+p {
+  font-family: "PoppinsRegular";
+  color: #43172e;
+}
+
+.titulo-parrafo {
+  font-family: "PoppinsRegular";
+  color: #43172e;
+  font-size: 2rem;
+}
+
+.bold {
+  font-family: "Triplett CG Light";
+  color: #43172e;
 }
 
 /* Estilo general para el título */
@@ -54,5 +42,13 @@ li {
 @media (max-width: 767px) {
   .titulo {
     font-size: 2rem; /* Reducción del tamaño del texto */
+  }
+
+  .titulo-parrafo {
+    font-size: 1rem; /* Reducción del tamaño del texto */
+  }
+
+  .parrafo {
+    font-size: 0.75rem; /* Reducción del tamaño del texto */
   }
 }

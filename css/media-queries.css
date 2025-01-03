@@ -37,6 +37,46 @@
   .desktop-nav-buttons {
     display: none;
   }
+
+  .contenedor-grid {
+    display: flex;
+    flex-direction: column; /* Apilar las imágenes y el texto verticalmente */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 0 20px;
+  }
+
+  .imagenes {
+    display: flex;
+    flex-direction: row; /* Las imágenes se mantienen en una fila */
+    gap: 20px; /* Espacio entre las imágenes */
+  }
+
+  .texto {
+    font-family: "PoppinsRegular", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    text-align: right; /* Centrar el texto */
+    padding: 0 20px;
+    width: 100%; /* El texto ocupará todo el ancho disponible */
+    order: -1; /* Mover el texto entre la portada y las imágenes antiguas */
+  }
+
+  /* Asegurarse de que la imagen de portada sea responsiva */
+  .imagen-portada {
+    max-width: 100%; /* Ajustar la imagen al 100% del ancho */
+    margin-left: 0; /* Eliminar márgenes */
+    margin-right: 0;
+    border-radius: 20px;
+  }
+
+  /* Las imágenes antiguas deben ocupar el 100% de su contenedor en móvil */
+  .imagen-antiguo-1,
+  .imagen-antiguo-2 {
+    max-width: 48%; /* Hacer que cada imagen ocupe el 48% del contenedor, permitiendo que estén una al lado de la otra */
+    height: auto; /* Mantener la proporción */
+    border-radius: 20px;
+  }
 }
 
 /* Media Query para Desktop */
