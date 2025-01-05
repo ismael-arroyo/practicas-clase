@@ -40,15 +40,60 @@
 
   .contenedor-grid {
     display: flex;
-    flex-direction: column; /* Apilar las imágenes y el texto verticalmente */
-    gap: 20px; /* Espacio entre los elementos */
+    flex-direction: column; /* Apilar elementos verticalmente */
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .contenedor-grid-2 {
+    display: flex;
+    flex-direction: column; /* Apilar elementos verticalmente */
+    gap: 20px;
     padding: 0 20px;
   }
 
   .imagenes {
     display: flex;
-    flex-direction: row; /* Las imágenes se mantienen en una fila */
+    flex-direction: row; /* Alinear las imágenes en una fila */
     gap: 20px; /* Espacio entre las imágenes */
+  }
+
+  .imagenes-2 {
+    display: flex;
+  }
+
+  /* Asegurar que las imágenes antiguas ocupen el 48% del contenedor */
+  .imagen-antiguo-1,
+  .imagen-antiguo-2 {
+    max-width: 48%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .imagen-antiguo-3 {
+    max-width: 100%; /* Ocupa el 100% en la segunda fila */
+    height: auto;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto; /* Centra la imagen */
+  }
+
+  /* Estilos del texto-2 */
+  .texto-2 {
+    font-family: "PoppinsRegular", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    text-align: left; /* Centrado de texto */
+    width: 100%; /* Ocupa el 100% del ancho */
+    order: -1; /* Coloca el texto entre las imágenes */
+  }
+
+  /* Asegurarse de que el contenedor de imágenes 2 también se apile verticalmente */
+  .imagenes-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .texto {
@@ -56,26 +101,10 @@
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-    text-align: right; /* Centrar el texto */
+    text-align: right;
     padding: 0 20px;
-    width: 100%; /* El texto ocupará todo el ancho disponible */
-    order: -1; /* Mover el texto entre la portada y las imágenes antiguas */
-  }
-
-  /* Asegurarse de que la imagen de portada sea responsiva */
-  .imagen-portada {
-    max-width: 100%; /* Ajustar la imagen al 100% del ancho */
-    margin-left: 0; /* Eliminar márgenes */
-    margin-right: 0;
-    border-radius: 20px;
-  }
-
-  /* Las imágenes antiguas deben ocupar el 100% de su contenedor en móvil */
-  .imagen-antiguo-1,
-  .imagen-antiguo-2 {
-    max-width: 48%; /* Hacer que cada imagen ocupe el 48% del contenedor, permitiendo que estén una al lado de la otra */
-    height: auto; /* Mantener la proporción */
-    border-radius: 20px;
+    width: 100%;
+    order: -1; /* Mover texto antes de las imágenes */
   }
 }
 

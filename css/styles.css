@@ -208,6 +208,7 @@ body {
   width: 60%; /* Limita el ancho del contenedor del texto (ajusta a tu gusto) */
   margin-right: 0; /* Mantener el margen derecho como estaba */
   margin-left: auto; /* Alinea el contenedor a la derecha */
+  flex-shrink: 0; /* Evita que el texto se encoja cuando la imagen se alinea a la derecha */
 }
 
 .titulo-parrafo {
@@ -215,7 +216,50 @@ body {
   font-size: 24px; /* Tamaño más grande para el título */
   font-weight: bold; /* Resaltar el título con negritas */
   margin-bottom: 10px; /* Espacio debajo del título */
-  color: #004d43; /* Color del título */
+  color: #43172e; /* Color del título */
+}
+
+.contenedor-grid-2 {
+  display: flex; /* Usamos flexbox para alinear los elementos */
+  gap: 20px; /* Espacio entre el texto y la imagen */
+  align-items: flex-start; /* Alinea ambos elementos en la parte superior */
+  margin: 20px; /* Espaciado exterior */
+}
+
+.titulo-parrafo-2 {
+  font-family: "Poppins", sans-serif; /* Fuente para el título */
+  font-size: 24px; /* Tamaño más grande para el título */
+  font-weight: bold; /* Resaltar el título con negritas */
+  margin-bottom: 10px; /* Espacio debajo del título */
+  color: #43172e; /* Color del título */
+}
+
+/* Columna de texto */
+.texto-2 {
+  display: flex;
+  flex-direction: column; /* Mantén el texto en una columna */
+  justify-content: flex-start; /* Asegura que el contenido comience desde arriba */
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin: 0; /* Elimina márgenes */
+  padding: 0; /* Elimina padding */
+  max-width: 40%; /* Limita el ancho del contenedor de texto al 30% */
+  flex-shrink: 0; /* Evita que el texto se encoja cuando la imagen se alinea a la derecha */
+}
+
+/* Columna de imagen */
+.imagenes-2 {
+  display: flex;
+  justify-content: flex-end; /* Empuja la imagen hacia el borde derecho */
+  align-items: flex-start; /* Alinea la imagen en la parte superior */
+  flex-grow: 1; /* Hace que el contenedor de la imagen ocupe el espacio disponible */
+}
+
+/* Imagen dentro de la columna de imagen */
+.imagen-antiguo-3 {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen para que no desborde el contenedor */
+  height: auto; /* Mantiene las proporciones */
+  border-radius: 30px; /* Bordes redondeados */
+  margin: 0; /* Elimina márgenes innecesarios */
 }
 
 .highlight {

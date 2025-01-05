@@ -19,6 +19,12 @@ p {
   font-size: 2rem;
 }
 
+.titulo-parrafo-2 {
+  font-family: "PoppinsRegular";
+  color: #43172e;
+  font-size: 2rem;
+}
+
 .bold {
   font-family: "Triplett CG Light";
   color: #43172e;
@@ -41,10 +47,14 @@ p {
 /* Media Query para ajustar el tamaño del título en dispositivos móviles */
 @media (max-width: 767px) {
   .titulo {
-    font-size: 2rem; /* Reducción del tamaño del texto */
+    font-size: 1.6rem; /* Reducción del tamaño del texto */
   }
 
   .titulo-parrafo {
+    font-size: 1rem; /* Reducción del tamaño del texto */
+  }
+
+  .titulo-parrafo-2 {
     font-size: 1rem; /* Reducción del tamaño del texto */
   }
 
