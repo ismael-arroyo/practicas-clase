@@ -25,6 +25,12 @@ p {
   font-size: 2rem;
 }
 
+.mission-title {
+  font-family: "PoppinsRegular";
+  color: #43172e;
+  font-size: 2rem;
+}
+
 .bold {
   font-family: "Triplett CG Light";
   color: #43172e;
@@ -60,5 +66,9 @@ p {
 
   .parrafo {
     font-size: 0.75rem; /* Reducción del tamaño del texto */
+  }
+
+  .mission-title {
+    font-size: 1rem;
   }
 }

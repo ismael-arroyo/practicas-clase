@@ -165,7 +165,6 @@ body {
 .contenedor-imagen {
   max-width: calc(100% - 40px); /* 20px en cada lado */
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .imagen-portada {
@@ -184,6 +183,8 @@ body {
   gap: 20px; /* Espacio entre las columnas */
   align-items: start; /* Alinea el contenido desde el inicio de la columna */
   margin: 20px; /* Espacio exterior */
+  margin-bottom: 20px; /* Espacio debajo del elemento */
+  margin-top: 50px;
 }
 
 .imagenes {
@@ -222,8 +223,10 @@ body {
 .contenedor-grid-2 {
   display: flex; /* Usamos flexbox para alinear los elementos */
   gap: 20px; /* Espacio entre el texto y la imagen */
-  align-items: flex-start; /* Alinea ambos elementos en la parte superior */
+  align-items: flex-start; /* Asegúrate de que tanto la imagen como el texto se alineen desde arriba */
   margin: 20px; /* Espaciado exterior */
+  padding: 0 20px;
+  margin-bottom: 50px; /* Espacio debajo del elemento */
 }
 
 .titulo-parrafo-2 {
@@ -236,14 +239,13 @@ body {
 
 /* Columna de texto */
 .texto-2 {
-  display: flex;
-  flex-direction: column; /* Mantén el texto en una columna */
-  justify-content: flex-start; /* Asegura que el contenido comience desde arriba */
-  text-align: left; /* Alinea el texto a la izquierda */
-  margin: 0; /* Elimina márgenes */
-  padding: 0; /* Elimina padding */
-  max-width: 40%; /* Limita el ancho del contenedor de texto al 30% */
-  flex-shrink: 0; /* Evita que el texto se encoja cuando la imagen se alinea a la derecha */
+  display: flex; /* Activamos Flexbox dentro de la columna de texto */
+  flex-direction: column; /* Aseguramos que los elementos estén en columna */
+  justify-content: flex-start; /* Alineamos el texto al principio */
+  text-align: left; /* Texto alineado a la izquierda */
+  margin: 0; /* Eliminamos márgenes */
+  padding: 0; /* Eliminamos padding */
+  flex-shrink: 0;
 }
 
 /* Columna de imagen */
@@ -252,14 +254,15 @@ body {
   justify-content: flex-end; /* Empuja la imagen hacia el borde derecho */
   align-items: flex-start; /* Alinea la imagen en la parte superior */
   flex-grow: 1; /* Hace que el contenedor de la imagen ocupe el espacio disponible */
+  margin-bottom: 50px; /* Espacio debajo del elemento */
 }
 
 /* Imagen dentro de la columna de imagen */
 .imagen-antiguo-3 {
-  max-width: 100%; /* Ajusta el tamaño máximo de la imagen para que no desborde el contenedor */
-  height: auto; /* Mantiene las proporciones */
+  max-width: 100%; /* Asegura que la imagen no desborde */
+  height: auto; /* Mantiene la proporción */
   border-radius: 30px; /* Bordes redondeados */
-  margin: 0; /* Elimina márgenes innecesarios */
+  margin: 0; /* Elimina márgenes */
 }
 
 .highlight {
@@ -288,4 +291,99 @@ body {
 /* Para aplicar correctamente la animación al rectángulo */
 .highlight.active::before {
   transform: scaleX(1); /* Expande el rectángulo */
+}
+
+/* Contenedor principal */
+.mission-section {
+  position: relative;
+  overflow: hidden;
+  padding: 0; /* Eliminado el padding */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Contenedor con el grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.2fr 3fr 1.2fr;
+  gap: 0; /* Eliminado el gap */
+  width: 100%;
+  align-items: center;
+  margin: 0; /* Eliminado el margen */
+  position: relative;
+}
+
+/* Columnas (flores) */
+.flores-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: -30%; /* Aumentado para que sobresalga más */
+}
+
+.flores-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: -30%; /* Aumentado para que sobresalga más */
+}
+
+/* Flores */
+.flor-1,
+.flor-2,
+.flor-3,
+.flor-4 {
+  width: 140%; /* Aumentado para flores más grandes */
+  max-width: 400px;
+  margin: 10px 0;
+}
+
+/* Contenedor de texto y botón */
+.mission-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 800px; /* Añadido max-width para mantener el ancho del contenido central */
+  margin: 0 auto; /* Centrar el contenido */
+  padding: 2rem; /* Mover el padding aquí para mantener espacio alrededor del texto */
+}
+
+/* Título de la misión */
+.mission-title {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+  word-wrap: break-word; /* Evitar cortar las palabras */
+  width: 100%;
+  line-height: 1.4; /* Espaciado adecuado */
+}
+
+/* Estilo del botón */
+.mission-button-container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.mission-button {
+  padding: 1.2rem 3rem;
+  font-size: 1.6rem;
+  color: #ebfff6;
+  background-color: #004d43;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 350px; /* Máximo tamaño del botón */
+}
+
+.mission-button:hover {
+  background-color: #ebfff6; /* Color del botón al pasar el mouse */
+  color: #004d43;
 }

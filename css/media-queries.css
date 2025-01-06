@@ -49,7 +49,7 @@
     display: flex;
     flex-direction: column; /* Apilar elementos verticalmente */
     gap: 20px;
-    padding: 0 20px;
+    grid-template-columns: 1fr; /* Asegura que haya una columna flexible */
   }
 
   .imagenes {
@@ -85,7 +85,8 @@
     line-height: 1.5;
     color: #333;
     text-align: left; /* Centrado de texto */
-    width: 100%; /* Ocupa el 100% del ancho */
+    width: 100%;
+    max-width: 100%;
     order: -1; /* Coloca el texto entre las imágenes */
   }
 
@@ -103,8 +104,65 @@
     color: #333;
     text-align: right;
     padding: 0 20px;
-    width: 100%;
+    max-width: 100%;
+    width: 100% !important;
     order: -1; /* Mover texto antes de las imágenes */
+    flex: 1; /* Esto asegura que el texto ocupe el espacio disponible */
+  }
+
+  .mission-container {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    height: 100%; /* Importante si quieres que se centre en toda la altura */
+    text-align: center; /* Para centrar texto */
+  }
+
+  .mission-button {
+    width: 120px;
+    font-size: 9px; /* Reduce el tamaño de la fuente */
+    padding: 10px 8px; /* Reduce el tamaño del padding */
+  }
+
+  .grid-container {
+    grid-template-columns: 0.8fr 2fr 0.8fr; /* Mantener tres columnas pero más estrechas */
+    gap: 0.5rem; /* Reducir el espacio entre columnas */
+  }
+
+  .mission-text {
+    padding: 0.75rem; /* Reducir el padding */
+    max-width: 100%; /* Asegurar que no exceda el ancho disponible */
+  }
+
+  .mission-title {
+    font-size: 1rem; /* Reducir el tamaño de la fuente */
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  /* Ajustar las flores para móvil */
+  .flor-1,
+  .flor-2,
+  .flor-3,
+  .flor-4 {
+    width: 120%; /* Reducir el tamaño en móvil */
+    max-width: 150px; /* Limitar el ancho máximo */
+  }
+
+  /* Ajustar los contenedores de las flores */
+  .flores-left {
+    margin-left: -15%; /* Reducir el margen negativo */
+  }
+
+  .flores-right {
+    margin-right: -15%; /* Reducir el margen negativo */
+  }
+
+  /* Ajustar el botón */
+  .mission-button {
+    padding: 0.6rem 1.2rem; /* Reducir el padding del botón */
+    font-size: 0.75rem; /* Reducir el tamaño de la fuente */
   }
 }
 
@@ -140,5 +198,39 @@
 
   .desktop-nav-buttons {
     display: flex;
+  }
+
+  .texto-2 {
+    max-width: 40%;
+  }
+}
+
+/* Media query para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 0.6fr 2fr 0.6fr; /* Hacer las columnas laterales aún más estrechas */
+  }
+
+  .flor-1,
+  .flor-2,
+  .flor-3,
+  .flor-4 {
+    width: 110%; /* Reducir aún más el tamaño */
+    max-width: 120px;
+  }
+
+  .mission-title {
+    font-size: 0.75rem; /* Reducir aún más la fuente */
+  }
+
+  .mission-text {
+    padding: 0.5rem; /* Reducir el padding */
+    max-width: 100%; /* Asegurar que no exceda el ancho disponible */
+  }
+
+  /* Ajustar el botón */
+  .mission-button {
+    padding: 0.6rem 1.2rem; /* Reducir el padding del botón */
+    font-size: 0.75rem; /* Reducir el tamaño de la fuente */
   }
 }
