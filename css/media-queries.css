@@ -164,6 +164,29 @@
     padding: 0.6rem 1.2rem; /* Reducir el padding del botón */
     font-size: 0.75rem; /* Reducir el tamaño de la fuente */
   }
+
+  .tags-section {
+    padding: 20px 0; /* Reducido a la mitad del padding original */
+  }
+
+  .tags-row {
+    margin: 25px 0; /* Reducido a la mitad del margen original */
+  }
+
+  .tags-row-2 {
+    margin-top: 30px; /* Reducido a la mitad del margen superior adicional */
+  }
+
+  .tag {
+    font-size: 18px; /* Reducido de 32px */
+    margin: 0 20px; /* Reducido de 40px */
+    gap: 20px; /* Reducido de 40px */
+  }
+
+  .x-icon {
+    width: 16px; /* Reducido proporcionalmente de 28px */
+    height: 16px; /* Reducido proporcionalmente de 28px */
+  }
 }
 
 /* Media Query para Desktop */

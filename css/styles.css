@@ -387,3 +387,57 @@ body {
   background-color: #ebfff6; /* Color del botón al pasar el mouse */
   color: #004d43;
 }
+
+.tags-section {
+  background-color: #004d43;
+  padding: 40px 0;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.tags-row {
+  display: flex;
+  white-space: nowrap;
+  margin: 30px 0; /* Aumentado de 15px a 30px */
+}
+
+/* También podemos añadir un margen específico para la segunda fila */
+.tags-row-2 {
+  margin-top: 60px; /* Añadido margen superior adicional para la segunda fila */
+}
+
+.tags-content {
+  display: flex;
+  animation: slideTag 20s linear infinite;
+}
+
+.tag {
+  color: #ebfff6;
+  font-family: "PoppinsRegular", sans-serif;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  margin: 0 40px;
+  gap: 60px; /* Añadido: espacio uniforme entre palabra y símbolo */
+}
+
+.x-icon {
+  width: 28px;
+  height: 28px;
+  /* Eliminado el margin-left ya que ahora usamos gap */
+}
+
+/* Animación para la primera fila (izquierda a derecha) */
+@keyframes slideTag {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* La segunda fila se mueve en dirección opuesta */
+.tags-row-2 .tags-content {
+  animation-direction: reverse;
+}
