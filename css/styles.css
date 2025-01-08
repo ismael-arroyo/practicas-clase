@@ -227,6 +227,7 @@ body {
   margin: 20px; /* Espaciado exterior */
   padding: 0 20px;
   margin-bottom: 50px; /* Espacio debajo del elemento */
+  margin-top: 30px;
 }
 
 .titulo-parrafo-2 {
@@ -440,4 +441,16 @@ body {
 /* La segunda fila se mueve en dirección opuesta */
 .tags-row-2 .tags-content {
   animation-direction: reverse;
+}
+
+.titulo-visitar {
+  font-family: "PoppinsRegular";
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 20px;
+  color: #43172e;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
