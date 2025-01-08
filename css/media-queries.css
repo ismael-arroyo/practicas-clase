@@ -120,9 +120,11 @@
   }
 
   .mission-button {
-    width: 120px;
-    font-size: 9px; /* Reduce el tamaño de la fuente */
-    padding: 10px 8px; /* Reduce el tamaño del padding */
+    width: auto; /* Permitir que el ancho se ajuste automáticamente */
+    font-size: 12px; /* Reducir el tamaño de la fuente si es necesario */
+    padding: 8px 16px; /* Ajustar el padding para móviles */
+    white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
+    text-align: center; /* Centrar el texto *//
   }
 
   .grid-container {
@@ -214,6 +216,57 @@
   }
   input#slide5:checked ~ .carousel-slides {
     transform: translateX(-400%);
+  }
+
+  /* footer */
+  /* Ajustes generales del footer */
+  .footer {
+    padding: 20px 10px; /* Reducimos los espacios */
+    text-align: center;
+  }
+
+  .footer-container {
+    padding: 0 10px; /* Añadimos espacio interno lateral */
+  }
+
+  /* Logo */
+  .footer-logo img {
+    width: 150px; /* Reducimos el tamaño del logo */
+    margin-bottom: 15px;
+  }
+
+  /* Texto descriptivo */
+  .footer-text {
+    font-size: 16px; /* Reducimos el tamaño del texto */
+    margin-bottom: 30px; /* Reducimos el espacio inferior */
+  }
+
+  /* Campo de entrada y botón */
+  .footer-input-container {
+    flex-direction: column; /* Apilamos el campo y el botón verticalmente */
+    gap: 15px; /* Espaciado entre los elementos */
+    margin-bottom: 50px; /* Reducimos el margen inferior */
+  }
+
+  .footer-input {
+    width: 90%; /* Campo de entrada ocupa todo el ancho */
+    font-size: 12px; /* Texto más pequeño */
+  }
+
+  .footer-btn solid {
+    width: 100%; /* Botón ocupa todo el ancho */
+    font-size: 12px; /* Texto más pequeño */
+  }
+
+  /* Navegación */
+  .footer-nav {
+    flex-direction: column; /* Enlaces apilados verticalmente */
+    gap: 10px; /* Espaciado más pequeño entre enlaces */
+    margin-bottom: 15px; /* Menor espaciado inferior */
+  }
+
+  .footer-nav a {
+    font-size: 14px; /* Ajustamos el tamaño del texto */
   }
 }
 

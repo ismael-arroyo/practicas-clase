@@ -557,3 +557,97 @@ input[type="radio"]:checked + label {
   background-color: #007bff; /* Color al hacer clic */
   transform: scale(1.2);
 }
+
+/*footer*/
+
+/* Footer General */
+.footer {
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 40px 20px;
+  text-align: center;
+  position: relative; /* Para colocar el rectángulo verde */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  width: 200px; /* Tamaño del logo */
+  margin-bottom: 20px;
+}
+
+/* Texto descriptivo */
+.footer-text {
+  font-family: "PoppinsRegular";
+  font-size: 30px;
+  color: #43172e; /* Color del texto */
+  margin-bottom: 60px;
+}
+
+/* Campo de entrada y botón */
+.footer-input-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Espaciado entre el campo de entrada y el botón */
+  margin-bottom: 80px;
+}
+
+.footer-input {
+  font-family: "PoppinsRegular";
+  font-size: 14px;
+  padding: 10px 20px;
+  border: 2px solid #064a3c;
+  border-radius: 25px;
+  outline: none;
+  color: #064a3c;
+  width: 300px; /* Ancho del campo de entrada */
+  transition: border-color 0.3s ease-in-out;
+}
+
+.footer-input:focus {
+  border-color: #043f34;
+}
+
+.footer-btn {
+  font-family: "PoppinsRegular";
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-btn.solid {
+  background-color: #064a3c;
+  color: #ebfff6;
+  border: none;
+}
+
+.footer-btn.solid:hover {
+  background-color: #ebfff6;
+  color: #064a3c;
+}
+
+/* Navegación */
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaciado entre enlaces */
+  margin-bottom: 20px; /* Espaciado inferior */
+  position: relative; /* Aseguramos que esté encima del rectángulo */
+  z-index: 2; /* Para que los enlaces estén encima del rectángulo verde */
+}
+
+.footer-nav a {
+  font-family: "PoppinsRegular";
+  font-size: 15px;
+  color: #43172e; /* Color del texto */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #064a3c; /* Color del hover */
+}
