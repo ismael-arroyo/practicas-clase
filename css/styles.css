@@ -454,3 +454,106 @@ body {
   color: #43172e;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
+
+/* General styling for the carousel */
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: calc(100% - 40px); /* Margen lateral de 20px a cada lado */
+  margin: 0 auto; /* Centrar el carrusel */
+  padding: 0 20px; /* Añade los márgenes laterales */
+  box-sizing: border-box; /* Incluye el padding dentro del ancho */
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  max-width: 100%;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 20px; /* Espaciado entre imágenes */
+}
+
+.carousel-slide {
+  flex: 0 0 auto; /* Evita que las imágenes se redimensionen automáticamente */
+  width: 429px;
+  height: 448px;
+  position: relative;
+  text-align: center;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* Slide content */
+.slide-content {
+  position: absolute;
+  bottom: 10px;
+  left: 20px; /* Cambiar a margen izquierdo */
+  text-align: left; /* Alinear texto a la izquierda */
+}
+
+.slide-content h3 {
+  font-family: "PoppinsRegular";
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.slide-content button {
+  font-family: "PoppinsRegular";
+  background: #ebfff6;
+  color: #004d43;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.slide-content button:hover {
+  background-color: #004d43; /* Color de fondo cuando se pasa el cursor */
+  color: #ebfff6;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.carousel-controls label {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #004d4383;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, transform 0.15s ease-in-out;
+}
+
+.carousel-controls label:hover {
+  background-color: #004d43; /* Cambio de color al pasar el cursor */
+}
+
+input[type="radio"]:checked + label {
+  background-color: #007bff; /* Color al hacer clic */
+  transform: scale(1.2);
+}
